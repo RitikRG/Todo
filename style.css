@@ -15,6 +15,7 @@ body{
     width: 70%;
     margin-left: 50%;
     margin-top: 30vh;
+    margin-bottom: 30vh;
     transform: translateX(-50%);
     border-radius: 20px;
     padding: 10px;
@@ -69,6 +70,7 @@ button:hover{
 
 .task{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -80,13 +82,49 @@ button:hover{
 
 .task button{
     background-color: transparent;
-    width: 5%;
+    padding: 10px 10px;
     border: none;
     border-radius: 10px;
 }
-.task button:hover{
-    background-color: #d4a373;
+.task button img{
+    width: 15px;
 }
 .completed{
     text-decoration: line-through;
+}
+
+
+/* Responsive css */
+
+@media only screen and (max-width: 600px){
+    #container{
+        width: 80%;
+    }
+    #addContainer{
+        input{
+            width: 60%;
+        }
+        button{
+            width: 40%;
+        }
+    }
+    /* .task button{
+        width: 15%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .task button img{
+        width: 50%;
+    } */
+    .task button:hover{
+        background-color: transparent;
+    }
+}
+
+
+@media only screen and (max-width: 800px){
+    /* .task button img{
+        width: 50px;
+    } */
 }
